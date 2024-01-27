@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
 
-        <section className="skill" id="skill" style={{ paddingTop: '100px' }}>
+        <section className="skill" id="skill" >
           <h2 className="skhead">Skills</h2>
         <div className="skcontent">
           <div className="skbox">
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="project" id="project" style={{paddingTop:'100px '}}>
+      <section className="project" id="project" style={{paddingBottom:'100px '}}>
         <h2 className="phead">Projects</h2>
         <div className="pjcontainer">
           <div className="pbox">
@@ -177,6 +177,38 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="contact" id="contact">
+        <div className="chead">
+          <h2>Contact Me</h2>
+          <h4>Let's work together —</h4>
+          <p>Engage in the extraordinary by reaching out through the contact details below.
+             I welcome recruiters to connect and explore the potential of our collaboration.
+             Contact me at <a href="mailto:sharanshanmugam7@gmail.com"  style={{ color: '#66FCF1' }}>sharanshanmugam7@gmail.com </a>
+             .Elevate your inquiries, initiate discussions, and let's craft success together —.
+          </p>
+          <div className="media" >
+                    <a href="https://www.linkedin.com/in/sharan-s-95b18b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredl(true)} onMouseLeave={() => setHoveredl(false)}>
+                      <box-icon type='logo' name='linkedin' animation='tada-hover' color={hoveredl ? 'black' : 'rgba(255, 255, 255, 0.799)'}></box-icon></a>
+                    <a href="https://www.instagram.com/sha_.z.__?igsh=YzVkODRmOTdmMw==" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredi(true)} onMouseLeave={() => setHoveredi(false)}>
+                      <box-icon name='instagram-alt' type='logo' animation='tada-hover' color={hoveredi ? 'black' : 'rgba(255, 255, 255, 0.799)'}></box-icon></a>
+                    <a href="https://twitter.com/Sharans777?t=ozRwxfH6r5DQMowIvJereQ&s=09" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredt(true)} onMouseLeave={() => setHoveredt(false)}>
+                      <box-icon name='twitter' type='logo' animation='tada-hover' color={hoveredt ? 'black' : 'rgba(255, 255, 255, 0.799)'}></box-icon></a>
+                    <a href="https://github.com/sharanshanmugam7" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredg(true)} onMouseLeave={() => setHoveredg(false)}>
+                      <box-icon name='github' type='logo' animation='tada-hover' color={hoveredg ? 'black' : 'rgba(255, 255, 255, 0.799)'}></box-icon></a>
+            </div>
+        </div>
+        <div className="cform">
+          <form action="">
+              <input type="text" placeholder="Enter Your Name" required></input>
+              <input type="email" placeholder="Enter Your Email" required></input>
+              <input type="email" placeholder="Enter Your Subject" required></input>
+              <textarea name="" id="" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
+              <input type="submit" value="submit" className="send"></input>
+          </form>
+        </div>
+
+      </section>
 
     </div>
   )

@@ -306,6 +306,18 @@ body {
     width: 100%;
     border-radius: 10%;
 }
+.pbox{
+    transition: .5s ease;
+}
+.pbox h4{
+    font-size: 1.5rem;
+}
+.pbox p{
+    color: rgba(255, 255, 255, 0.799);
+}
+.pbox:hover{
+    transform: scale(1.1);
+}
 .player p{
     margin: .3rem 0 1rem;
 }
@@ -313,7 +325,69 @@ body {
     background: linear-gradient(rgba(0,0,0,.1),#66fcf248);
 }*/
 
-  
+
+.contact{
+    height: 100vh;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+.chead{
+    padding: 0 10%;
+}
+.chead h2{
+    font-size: 4.5rem;
+    line-height: 1;
+}
+.chead h4{
+    margin: 15px 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #66FCF1;
+}
+.chead p{
+    line-height: 26px;
+    margin-bottom: .5rem;
+    color: rgba(255, 255, 255, 0.799);
+}
+.cform form{
+    position: relative;
+    margin-top: 100px;
+}
+.cform form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: rgba(0, 0, 0, 0.277);
+    color: rgb(240, 248, 255);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid#ffffff36;
+}
+.cform textarea{
+    resize: none;
+    height: 220px;
+}
+.cform form .send{
+    border: 1px solid#66FCF1;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.cform form .send:hover{
+    color: #66FCF1;
+    transform: scale(1.1);
+}
 
 
 
