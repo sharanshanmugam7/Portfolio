@@ -9,20 +9,13 @@
     "boxicons": "^2.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     "react-scripts": "^5.0.1",
-=======
     "react-scripts": "5.0.1",
     "react-scripts": "^5.0.1",
     "react-scripts": "5.0.1",
-
     "react-scripts": "5.0.1",
-
->>>>>>> 08e90997f5798dbb247008d3988a77c7c0f8c834
-=======
     "react-scripts": "5.0.1",
->>>>>>> 3e370a62f937df86c50c6e78e3f7611694e2471a
     "typed.js": "^2.1.0",
     "web-vitals": "^2.1.4"
   },
