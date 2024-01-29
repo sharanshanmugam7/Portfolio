@@ -4,6 +4,7 @@ import 'boxicons'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Typed from 'typed.js';
+import ScrollReveal from 'scrollreveal';
 
 
 export default function Home() {
@@ -80,6 +81,37 @@ export default function Home() {
     const [hoveredar, setHoveredar] = useState(false);
     
 
+    useEffect(() => {
+      ScrollReveal().reveal('.hcontent,.acontent,skcontent,.phead', {
+        reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay: 150,
+        origin: 'top'
+      });
+  
+    }, []);
+    useEffect(() => {
+      ScrollReveal().reveal('.skill,.pjcontainer,.chead,.media', {
+        reset: true,
+        distance: '80px',
+        duration: 4000,
+        delay: 200,
+        origin: 'left'
+      });
+  
+    }, []);
+    useEffect(() => {
+      ScrollReveal().reveal('.cform', {
+        reset: true,
+        distance: '80px',
+        duration: 2000,
+        delay: 200,
+        origin: 'bottom'
+      });
+  
+    }, []);
+
     
   return (
     <div className="main">
@@ -96,7 +128,7 @@ export default function Home() {
 
         <section className="home" id="home">
             <div className="hcontent">
-                <h1>Hi, I'm Sharan</h1>
+                <h1 className="hh">Hi, I'm Sharan</h1>
                 <h3>
                     <span className="typing"></span>
                 </h3>
