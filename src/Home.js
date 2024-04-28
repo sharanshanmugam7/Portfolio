@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => 
   {
     const options = {
-      strings: ['IoT Enthusiast','Web Developer'],
+      strings: ['IoT Enthusiast','Software Developer'],
       typeSpeed: 50, 
       backSpeed: 30, 
       loop: true, 
@@ -138,10 +138,11 @@ export default function Home() {
                     My digital journey is a relentless pursuit of 
                     excellence, transforming projects into opportunities 
                     for cutting-edge tech and creative solutions. 
-                    Welcome to the boundless adventure of innovation!                
+                    Welcome to the frontier of innovation!🚀 contact .
+                    <a href="mailto:sharanshanmugam7@gmail.com"  style={{ color: '#66FCF1' }}>sharanshanmugam7@gmail.com </a>              
                 </p>
                 <div className="media" >
-                    <a href="https://www.linkedin.com/in/sharan-s-95b18b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredl(true)} onMouseLeave={() => setHoveredl(false)}>
+                    <a href="https://www.linkedin.com/in/link-sharan-s/" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredl(true)} onMouseLeave={() => setHoveredl(false)}>
                       <box-icon type='logo' name='linkedin' animation='tada-hover' color={hoveredl ? 'black' : 'rgba(255, 255, 255, 0.799)'}></box-icon></a>
                     <a href="https://www.instagram.com/sha_.z.__?igsh=YzVkODRmOTdmMw==" target="_blank" rel="noopener noreferrer" onMouseEnter={() => setHoveredi(true)} onMouseLeave={() => setHoveredi(false)}>
                       <box-icon name='instagram-alt' type='logo' animation='tada-hover' color={hoveredi ? 'black' : 'rgba(255, 255, 255, 0.799)'}></box-icon></a>
@@ -194,7 +195,7 @@ export default function Home() {
         <section className="skill" id="skill" style={{ paddingTop: '100px' }} >
           <h2 className="skhead">Skills</h2>
         <div className="skcontent">
-          <div className="skbox">
+          <div className="skbox" onClick={scrollToproject} >
             <box-icon name='code-alt' color='#66FCF1'></box-icon>
             <h3>Web Development</h3>
             <p>Crafting immersive user experiences through front-end development and shaping robust server-side functionality.</p>
@@ -211,45 +212,47 @@ export default function Home() {
         <h2 className="phead">Projects</h2>
         <div className="pjcontainer">
           <div className="pbox">
-            <img src={'/project/p1.jpg'} alt="1" />
+          <a href="https://github.com/sharanshanmugam7/Advanced-Application-Development" target="_blank">
+            <img src={'/project/ezpay.png'} alt="1" /></a>
               <div className="player">
-                <h4>Web Application 1</h4>
+                <h4>ezPay</h4>
                 <p>
-                To achieve the desired effect of flipping the box on
-                hover to display technical proficiency, you can use 
-                CSS3 transitions and transforms. Here's an example of 
-                how you can modify your CSS and add a new class to 
-                handle the flipping effect
+                ezPay is an online mobile recharge application developed using React Vite 
+                and PostgreSQL with Neon console for the backend.
+                Through user authentication and authorization mechanisms 
+                powered by JWT and role-based authentication, EZPay ensures a secure
+                process for recharging your mobile services.
                 </p>
-              <a href="#"><box-icon name='link-external' color='white'></box-icon></a>
+              <a href="https://temp-ezpay.netlify.app/" target="_blank"><box-icon name='link-external' color='white'></box-icon></a>
             </div>
           </div>
           <div className="pbox">
-            <img src={'/project/p1.jpg'} alt="1" />
+          <a href="https://github.com/sharanshanmugam7/XO-multiplayer" target="_blank">
+            <img src={'/project/bg1.png'} alt="1" /></a>
               <div className="player">
-                <h4>Web Application 1</h4>
-                <p>
-                To achieve the desired effect of flipping the box on
-                hover to display technical proficiency, you can use 
-                CSS3 transitions and transforms. Here's an example of 
-                how you can modify your CSS and add a new class to 
-                handle the flipping effect
+                <h4>XO-MultiPlayer</h4>
+                <p>XO multiplayer game developed using React.
+                Challenge friends or foes in this timeless battle of 
+                Xs and Os, where every move is a step closer to victory.
+                With its intuitive interface and fluid gameplay, 
+                this game promises endless excitement at your fingertips. 
+                Click below to start playing now! 🚀
                 </p>
-              <a href="#"><box-icon name='link-external' color='white'></box-icon></a>
+              <a href="https://playsxo.netlify.app/" target="_blank"><box-icon name='link-external' color='white'></box-icon></a>
             </div>
           </div>
           <div className="pbox">
-            <img src={'/project/p1.jpg'} alt="1" />
+          <a href="https://github.com/sharanshanmugam7/WebAppDevelopment" target="_blank">
+            <img src={'/project/diy.png'} alt="1" /></a>
               <div className="player">
-                <h4>Web Application 1</h4>
+                <h4>Home Improvement Hub</h4>
                 <p>
-                To achieve the desired effect of flipping the box on
-                hover to display technical proficiency, you can use 
-                CSS3 transitions and transforms. Here's an example of 
-                how you can modify your CSS and add a new class to 
-                handle the flipping effect
+                HIH --is a Home Improvement Hub web application developed using React.
+                It is implemented with Redux that ensures seamless access to variables throughout the application.
+                From interior design ideas to DIY tutorials, and from finding the perfect contractors 
+                to shopping for materials, we've got you covered.
                 </p>
-              <a href="#"><box-icon name='link-external' color='white'></box-icon></a>
+              <a href="https://github.com/sharanshanmugam7/WebAppDevelopment"><box-icon name='link-external' color='white'></box-icon></a>
             </div>
           </div>
         </div>
@@ -280,7 +283,7 @@ export default function Home() {
           <form action="">
               <input type="text" placeholder="Enter Your Name" required></input>
               <input type="email" placeholder="Enter Your Email" required></input>
-              <input type="email" placeholder="Enter Your Subject" required></input>
+              <input type="text" placeholder="Enter Your Subject" required></input>
               <textarea name="" id="" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
               <input type="submit" value="submit" className="send"></input>
           </form>
